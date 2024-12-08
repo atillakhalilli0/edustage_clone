@@ -163,6 +163,7 @@ nav li a:hover{
 }
 
 .section-2-cards .card img{
+    overflow: hidden;
     transition: .4s;
 }
 
