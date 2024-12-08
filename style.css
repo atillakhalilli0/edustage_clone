@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header{
+    background: url("https://preview.colorlib.com/theme/edustage/img/banner/home-banner.jpg.webp")center/cover;
+    height: 100vh;
+}
+
+.container{    
+    width: 66vw;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 45px;
+}
+
+nav li a{
+    font: 500 14px / 80px "Rubik", sans-serif;
+    text-transform: capitalize;
+    color: #002347;
+    transition: .4s;
+}
+
+nav li a:hover{
+    color: #fdc632;
+}
+
+.header-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    gap: 40px;
+    height: 60vh;
+}
+
+.header-title p{
+    font: 500 20px "Roboto", sans-serif;
+    color: #002347;
+    text-transform: uppercase;
+}
+
+.header-title h1{
+    font: 500 48px "Rubik", sans-serif;
+    color: #002347;
+    text-transform: uppercase;
+}
+
+.header-buttons .btn1{
+    background-color: #002347;
+    padding: 0px 48px;    
+    text-transform: uppercase;
+    color: #fdc632;
+    font: 500 13px "Roboto", sans-serif;
+    line-height: 48px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: .4s;
+    margin-right: 10px;
+}
+
+.header-buttons .btn1:hover{
+    background-color: transparent;
+    color: #002347;
+    border: 1px solid #002347;
+}
+
+.header-buttons .btn2{
+    background: #fdc632;
+    padding: 0px 48px;
+    color: #002347;
+    font: 500 13px "Roboto", sans-serif;
+    line-height: 48px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    transition: .4s;
+    margin-left: 10px;
+}
+
+.header-buttons .btn2:hover{
+    background-color: #002347;
+    color: #fdc632;
+}
+
+.section-1, .section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: 130px auto;
+    gap: 85px;
+}
+
+.section-title h2{
+    font: bold 36px / 30px "Rubik", sans-serif;
+    text-transform: capitalize;
+    color: #002347;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title p{
+    font: italic 16px "Roboto", sans-serif;
+    color: #7B838A;
+    text-align: center;
+}
+
+.section-1-cards, .section-2-cards{
+    display: flex;
+    gap: 30px;
+    color:#002347;
+}
+
+.section-1-cards .card{
+    width: 280px;
+    padding: 30px 35px;
+    background-color: #f9f9ff;
+    transition: .5s;
+}
+
+.section-1-cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.section-1-cards .card i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.section-1-cards .card h3{
+    font: 500 20px "Rubik", sans-serif;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+.section-1-cards .card p{
+    font: 400 16px "Roboto", sans-serif;
+    color: #7B838A;
+    line-height: 23px;
+}
+
+.section-2-cards .card{
+    background-color: #f9f9ff;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.section-2-cards .card-top img{
+    width: 350px;
+}
+
+.section-2-cards .card img{
+    transition: .4s;
+}
+
+.section-2-cards .card:hover .card-top img{
+    scale: 1.2;
+}
+
+.section-2-cards .card-content{
+    padding: 30px 26px 0 26px;
+}
+
+.section-2-cards .card-bottom{
+    padding: 0 26px 30px 26px;
+}
+
+.section-2-cards .card-content button{
+    border: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 6px 21px;
+    font-size: 13px;
+    color: #fff;
+    background: #002347;
+    text-transform: uppercase;
+}
+
+.section-2-cards .card-content a{
+    display: block;
+    font: 500 20px "Rubik", sans-serif;
+    text-transform: capitalize;
+    margin: 30px 0 20px 0;
+    transition: .4s;
+}
+
+.section-2-cards .card:hover .card-content a{
+    color: #fdc632;
+}
+
+.section-2-cards .card-content p{
+    font: 400 16px "Roboto", sans-serif;
+    color: #7B838A;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+.section-2-cards .card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-2-cards .card-bottom span{
+    font: 500 16px "Roboto", sans-serif;
+    text-transform: capitalize;
+}
+
+.section-2-cards .card-bottom i{
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.section-2-cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.section-3-bg{
+    background-color: #002347;
+}
+
+.section-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    height: 75vh;
+}
+
+.section-3-left{
+    flex-basis: 60%;
+}
+
+.section-3-left h2{
+    color: #fff;
+    font: 500 42px "Rubik", sans-serif;
+    text-transform: capitalize;
+}
+
+.section-3-left p{
+    color:#fff;
+    font: 400 16px "Roboto", sans-serif;
+    line-height: 25px;
+    margin: 20px 0 80px 0;
+}
+
+.section-3-left ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color:#fff;
+}
+
+.section-3-left li{
+    width: 155px;
+    height: 120px;
+    font: 600 36px "Rubik", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    background-color: #334f6c;
+}
+
+.section-3-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+.section-3-form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.section-3-form h2{
+    font: 500 24px "Rubik", sans-serif;
+    text-transform: capitalize;
+    color: #002347;
+}
+
+.section-3-form p{
+    color:#7B838A;
+    font: 400 16px "Roboto", sans-serif;
+    margin-bottom: 20px;
+}
+
+.section-3-form input{
+    width: 90%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 10px;
+}
+
+.section-3-form input::placeholder{
+    color: #999;
+    font: 500 14px "Roboto", sans-serif;
+    text-transform: capitalize;
+}
+
+.section-3-right button{
+    color: #002347;
+    background-color: #fdc632;
+    width: 270px;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font: bold 13px "Roboto", sans-serif;
+    margin-top: 30px;
+    transition: .4s;
+}
+
+.section-3-right button:hover{
+    color:#fdc632;
+    background-color:#002347 ;
+}
+
+.section-4-bg{
+    background-color: #eee;
+}
+
+.section-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+.section-4 .section-title{
+    margin: 135px 0 85px 0;
+}
+
+.section-4 .section-title h2{
+    font: 600 36px "Rubik" sans-serif;
+}
+
+.section-4-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section-4-cards img{
+    width: 100%;
+}
+
+.section-4-cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: .4s;
+}
+
+.section-4-cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.section-4-cards .card h3{
+    font: 500 20px "Rubik", sans-serif;
+    text-transform: capitalize;
+    color: #002347;
+    padding-top: 20px;
+}
+
+.section-4-cards .card span{
+    font: 400 14px "Roboto", sans-serif;
+    color: #7B838A;
+    padding-top: 5px;
+}
+
+.section-4-cards .card p{
+    font: 400 16px / 25px "Roboto", sans-serif;
+    text-align: center;
+    color: #7B838A;
+    padding: 30px 25px;
+}
+
+.section-4-icons{
+    margin-bottom: 25px;
+}
+
+.section-4-icons i{
+    font-weight: 400;
+    font-size: 16px;
+    color: #7B838A;
+    display: inline;
+    margin: 10px;
+    transition: .4s;
+}
+
+.section-4-icons i:hover{
+    color: #fdc632;
+}
+
+.section-5-bg{
+    background-color: #eee;
+}
+
+.section-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 130px 0;
+}
+
+.section-5-title{
+    margin-bottom: 85px;
+}
+
+.section-5-title h2{
+    font: bold 36px / 30px "Rubik", sans-serif;
+    text-transform: capitalize;
+    color: #002347;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-5-title p{
+    font: italic 16px "Roboto", sans-serif;
+    color: #7B838A;
+    text-align: center;
+}
+
+.section-5-cards{
+    display: flex;
+    gap: 40px;
+}
+
+.section-5-cards .card{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px 55px;
+    transition: .4s;
+}
+
+.section-5-cards .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.section-5-cards .card-content{
+    margin: 0 20px;
+}
+.section-5-cards .card-content h3{
+    font: 500 20px "Rubik", sans-serif;
+    color: #002347;
+    text-transform: capitalize;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.section-5-cards .card-content p{
+    color: #7b838a;
+    font: 400 16px / 25px "Roboto", sans-serif;
+    text-align: start;
+}
+
+footer {
+    background-color: #002347;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 0;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    font: 500 18px "Rubik", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+}
+footer ul p{
+    margin-bottom: 35px;
+}
+
+footer li{
+    margin-bottom: 15px;
+}
+
+footer a{
+    font: 400 16px "Roboto", sans-serif;
+    text-transform: capitalize;
+    color: #7B838A;
+}
+
+.footer-submit{
+    font: 400 16px "Roboto", sans-serif;
+    color: #7B838A;    
+}
+
+footer input{
+    background-color: #334f6c;
+    width: 250px;
+    padding: 12px 10px 12px 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+footer input::placeholder{
+    text-transform: capitalize;
+}
+
+footer button{
+    background: #fdc632;
+    color: #002347;
+    padding: 10px 20px;
+    margin-left: -60px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    border: none;
+}
+
+.footer-bottom{
+    display: flex;
+    gap: 404px;
+    margin-top: 50px;
+}
+.bottom-text p{
+    color: #fff;
+    font: 400 16px "Roboto", sans-serif;
+    text-transform: capitalize;
+    line-height: 16px;
+}
+
+.footer-bottom .icons i{
+    font-size: 16px;
+    color: #ccc;
+    background-color: #334f6c;
+    padding: 12px;
+    transition: .4s;
+}
+
+.footer-bottom .icons i:hover{
+    color:#002347;
+    background-color: #fdc632;
+}
