@@ -3,29 +3,63 @@
 
 header{
     background: url("https://preview.colorlib.com/theme/edustage/img/banner/home-banner.jpg.webp")center/cover;
-    height: 100vh;
+    height: 75vh;
 }
 
-.container{    
-    width: 66vw;
-    margin: auto;
+.container{
+        width: 90%;
+        margin: 0 auto
+}
+
+@media only screen and (min-width:768px) {
+    .container{    
+        width: 66vw;
+        margin: 0 auto;
+    }
 }
 
 nav{
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    background-color: #868686;
+
+    .fa-bars{
+        font-size: 30px;
+        color: #fdc632;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked~ul{
+    position: absolute;
+    display: flex !important;
+    width: 100%;
+    flex-direction: column;
+    right: 0;
+    top: 100%;
+    background-color: #868686;
 }
 
 nav ul{
-    display: flex;
-    gap: 45px;
+    display: none;
+}
+
+nav li{
+    border-bottom: 1px solid #ededed33;
 }
 
 nav li a{
-    font: 500 14px / 80px "Rubik", sans-serif;
+    margin: 0 30px;
+    font: 500 14px "Rubik", sans-serif;
+    line-height: 30px;
     text-transform: capitalize;
-    color: #002347;
+    color: #fff;
     transition: .4s;
 }
 
@@ -33,7 +67,23 @@ nav li a:hover{
     color: #fdc632;
 }
 
+@media only screen and (min-width:768px){
+    nav{width: 100%; padding: 0; background-color: transparent;}
+    nav .icon {display: none;}
+    nav li{
+        border: none;
+    }
+    nav ul {
+        display: flex !important;
+    }
+    nav li a{
+        font: 500 14px / 80px "Rubik", sans-serif;
+        color: #002347;
+    }
+}
+
 .header-title{
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,12 +97,22 @@ nav li a:hover{
     font: 500 20px "Roboto", sans-serif;
     color: #002347;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .header-title h1{
-    font: 500 48px "Rubik", sans-serif;
+    font: 500 40px "Rubik", sans-serif;
     color: #002347;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.header-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .header-buttons .btn1{
@@ -65,7 +125,6 @@ nav li a:hover{
     border-radius: 5px;
     border: 1px solid transparent;
     transition: .4s;
-    margin-right: 10px;
 }
 
 .header-buttons .btn1:hover{
@@ -84,7 +143,6 @@ nav li a:hover{
     text-transform: uppercase;
     border: 1px solid transparent;
     transition: .4s;
-    margin-left: 10px;
 }
 
 .header-buttons .btn2:hover{
@@ -92,7 +150,20 @@ nav li a:hover{
     color: #fdc632;
 }
 
-.section-1, .section-2{
+@media only screen and (min-width:768px){
+    header{
+        background: url("https://preview.colorlib.com/theme/edustage/img/banner/home-banner.jpg.webp")center/cover;
+        height: 100vh;
+    }
+    .header-title{
+        width: 100%;
+    }
+    .header-title h1{
+        font: 500 48px "Rubik", sans-serif;
+    }
+}
+
+.section-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,12 +189,14 @@ nav li a:hover{
 
 .section-1-cards, .section-2-cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     color:#002347;
 }
 
 .section-1-cards .card{
-    width: 280px;
+    width: 100%;
     padding: 30px 35px;
     background-color: #f9f9ff;
     transition: .5s;
@@ -148,6 +221,30 @@ nav li a:hover{
     font: 400 16px "Roboto", sans-serif;
     color: #7B838A;
     line-height: 23px;
+}
+
+@media only screen and (min-width:768px){
+    .section-1-cards .card{
+        width: 280px;
+}
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin: 130px auto;
+    gap: 85px;
+}
+
+.section-2-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    color:#002347;
 }
 
 .section-2-cards .card{
@@ -227,6 +324,13 @@ nav li a:hover{
 
 .section-2-cards .card:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media only screen and (min-width:768px){
+    .section-2-cards .card{
+        width: 30%;
+}
+
 }
 
 .section-3-bg{
